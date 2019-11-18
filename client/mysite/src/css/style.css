@@ -202,13 +202,11 @@ img {
 }
 
 #aboutwrap {
-	background: url(../img/about4.jpg) no-repeat center top;
 	margin-top: -60px;
 	padding-top: 250px;
 	text-align:center;
-	background-attachment: relative;
 	background-position: center center;
-  height: 550px;
+  height: 635px;
 	width: 100%;
 
     -webkit-background-size: 100%;
@@ -221,6 +219,38 @@ img {
     -o-background-size: cover;
     background-size: cover;
 }
+
+@media screen and (max-width: 768px) {
+  #aboutwrap {
+    height: 400px;
+    width: 100%
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #aboutwrap {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #aboutwrap {
+    display:none;
+  }
+}
+
+@media screen and (min-width: 1450px) and (max-width: 1920px) {
+  #aboutwrap {
+    height: 635px;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 600px) {
+  #aboutwrap {
+    height: auto;
+  }
+}
+
 .title {
     text-align: center;
 }

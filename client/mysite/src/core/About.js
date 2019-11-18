@@ -4,6 +4,7 @@ import {getResume} from '../core'
 import { API_URL } from "../config"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
+import banner from '../img/about4.jpg';
 
 const About = () => {
 
@@ -30,7 +31,7 @@ const About = () => {
     const showAbout = () => {
         return (
             <Fragment>
-               <div id="aboutwrap">
+               <div id="aboutwrap" style={{width: "100%", backgroundImage: `url(${banner})`}}>
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-6 col-lg-offset-3">
@@ -65,10 +66,10 @@ const About = () => {
                 <div id="social">
                     <div className="container">
                         <div className="row centered">
-                            <div class="col-lg-6">
+                            <div className="col-lg-6">
                             <a target="_blank" rel="noopener noreferrer" href={'//www.linkedin.com/in/kevin-yapo'}><FontAwesomeIcon className="icon" icon={faLinkedin}/></a>
                             </div>
-                            <div class="col-lg-6">
+                            <div className="col-lg-6">
                             <a target="_blank" rel="noopener noreferrer" href={'//github.com/kyapo33/'}><FontAwesomeIcon className="icon" icon={faGithub}/></a>
                             </div>
                         </div>

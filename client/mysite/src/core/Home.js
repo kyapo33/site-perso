@@ -52,10 +52,10 @@ const Home = () => {
                 <section id="works">
                 <div className="container">
                     <div className="row centered mt mb">
-                        <h1 className="col-md-12 projet-titre" >MES PROJETS REALISES</h1>
+                        <h1 className="col-md-12 projet-titre" >MES PROJETS RÉALISÉS</h1>
                         {projects && projects.map((p, i) => (
-                            <div key={i}  className="col-lg-4 col-md-4 col-sm-4 gallery">
-                            <Link to={`/project/${p.slug}`}><img style={{width: '100%', cursor: 'pointer'}} src={`${API_URL}/project/photo/${p.slug}`} className="img-responsive mt-5" alt="project" /></Link>   
+                            <div key={i}  className="col-lg-6 gallery">
+                            <Link to={`/project/${p.slug}`}><img style={{width: '80%', height: "300px", cursor: 'pointer'}} src={`${API_URL}/project/photo/${p.slug}`} className="img-responsive mt-5" alt="project" /></Link>   
                         </div>   
                         ))}
                     </div>
