@@ -21,7 +21,7 @@ import { faPowerOff } from '@fortawesome/free-solid-svg-icons'
     return (
       <div>
         <Navbar className="navbar-default" light expand="md">
-          <NavbarBrand style= {{color: "#1abc9c"}} tag={Link} to="/">Kevin Yapo</NavbarBrand>
+          <NavbarBrand style= {{color: "#1abc9c"}} tag={Link} to="/">Kevin YAPO</NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
