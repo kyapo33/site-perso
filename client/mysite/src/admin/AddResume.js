@@ -68,7 +68,7 @@ const AddResume = () => {
                 <FormGroup>
                     <Label className="btn btn-outline-info">
                         Ajouter une image
-                        <Input onChange={handleChange('photo')} type="file" accept="image/*" hidden />
+                        <Input onChange={handleChange('photo')} type="file" accept="pdf/image/*" hidden />
                         <FormText>Taille maximum 1 Mo</FormText>
                     </Label>
                 </FormGroup>
